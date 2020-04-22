@@ -1,3 +1,25 @@
+window.onload = focusMe
+
+function focusMe () {
+    var initScroll = 0;
+    var myWidth = document.body.clientWidth / 900;
+    var runner = this.setInterval(function () {
+        if(initScroll < 400 * myWidth) {
+            console.log('init', initScroll)
+            initScroll = initScroll + 15
+            window.scrollTo(0, initScroll);
+        } else if(initScroll < 600 * myWidth) {
+            console.log('init', initScroll)
+            initScroll = initScroll + 10
+            window.scrollTo(0, initScroll);
+        } if(initScroll < 700 * myWidth) {
+            console.log('init', initScroll)
+            initScroll = initScroll + 5
+            window.scrollTo(0, initScroll);
+        } else clearInterval(runner);
+    }, 20)
+};
+
 var lastScroll = 0;
 
 function scrolling () {

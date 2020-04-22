@@ -1,40 +1,21 @@
 
-body{
-    margin: 0px;
-    height: 150vh;
-    background-color: white;
+#my-name{
+    position: fixed;
+    top: 50%;
+    z-index: 1200;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
 }
 
-#i1 {
-    height: 250%;
-    width: 100%;
+#my-name > h1 {
+    color: #016062;
+    font-size: 3em;
+    text-shadow: 2px 2px 3px white;
 }
 
-#i2 {
-    width: 100%;
-    height: 250%;
-}
-
-#i3 {
-    height: 250%;
-    width: 100%;
-}
-
-#d1 {
-    margin-top: 0px;
-    width: 100%;
-    z-index: 200;
-    position: absolute;
-}
-
-#d2 {
-    width: 100%;
-    z-index: 100;
-    position: absolute;
-}
-
-#d3 {
-    width: 100%;
-    z-index: 10;
-    /* position: fixed; */
+#my-name > h2 {
+    text-shadow: 1px 1px 3px white;
+    font-size: 2em;
+    color: #109383;
 }
