@@ -4,7 +4,7 @@ function focusMe () {
     var initScroll = 0;
     var clientWidth = document.body.clientWidth;
     console.log('clientWidth', clientWidth)
-    var myWidth = clientWidth < 600 ? clientWidth / 1500 : clientWidth / 900;
+    var myWidth = clientWidth < 600 ? clientWidth / 2500 : clientWidth / 900;
     var runner = this.setInterval(function () {
         if(initScroll < 400 * myWidth) {
             console.log('init', initScroll)
