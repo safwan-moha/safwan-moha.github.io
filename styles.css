@@ -11,11 +11,21 @@
 #my-name > h1 {
     color: #016062;
     font-size: 3em;
-    text-shadow: 2px 2px 3px white;
+    text-shadow: 2px 2px 2px white;
+    margin: 0px;
 }
 
 #my-name > h2 {
-    text-shadow: 1px 1px 3px white;
+    margin: 0px;
+    text-shadow: 1px 1px 2px #222;
     font-size: 2em;
     color: #109383;
+}
+
+h1:hover {
+    opacity: 0.9;
+}
+
+h2:hover {
+    opacity: 0.9;
 }
